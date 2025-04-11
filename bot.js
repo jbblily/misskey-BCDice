@@ -5,7 +5,7 @@ const fs = require('fs');
 require('dotenv').config();
 
 // 설정값
-const HOST = process.env.MISSKEY_API_URL;
+const HOST = process.env.MISSKEY_HOST;
 const TOKEN = process.env.MISSKEY_TOKEN;
 const BOT_USER_ID = process.env.BOT_USER_ID;
 const STREAM_URL = `${HOST.replace(/^http/, 'ws')}/streaming?i=${TOKEN}`;
